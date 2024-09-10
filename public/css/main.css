@@ -1,0 +1,203 @@
+:root {
+    --background-color: #022a30;
+    --bs-primary-rgb: #deff58;
+    --accent-color: #0043a8;
+    --white-color: #ffffff;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--bs-primary-rgb);
+    font-weight: 300;
+    font-size: 1.2rem;
+    background-image: url('/css/img/noise-bg.png');
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Unbounded', Helvetica, sans-serif;
+    font-weight: 800;
+    color: var(--bs-primary-rgb);
+}
+
+.container-fluid-custom {
+    max-width: 1600px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* Header and Footer text elements */
+.nav-link, .footer-link {
+    color: var(--bs-primary-rgb) !important;
+}
+
+/* Adjust hover effect for links */
+.nav-link:hover, .footer-link:hover {
+    color: var(--white-color) !important;
+}
+
+/* Button */
+.btn {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    border-radius: 2rem;
+    transition: all 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.btn-primary {
+    --bs-btn-color: var(--accent-color);
+    --bs-btn-bg: var(--bs-primary-rgb);
+    --bs-btn-border-color: var(--bs-primary-rgb);
+    --bs-btn-hover-color: var(--bs-primary-rgb);
+    --bs-btn-hover-bg: var(--accent-color);
+    --bs-btn-hover-border-color: var(--accent-color);
+}
+
+.btn-outline-primary {
+    --bs-btn-color: var(--bs-primary-rgb);
+    --bs-btn-border-color: var(--bs-primary-rgb);
+    --bs-btn-hover-color: var(--white-color);
+    --bs-btn-hover-bg: var(--accent-color);
+    --bs-btn-hover-border-color: var(--accent-color);
+}
+
+/* Card Styling for Dashboard */
+.card {
+    border-radius: 16px;
+    border: none;
+    background-color: var(--background-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.card-body {
+    padding: 1.5rem;
+    color: var(--bs-primary-rgb);
+}
+
+.card h5 {
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 700;
+    color: var(--bs-primary-rgb);
+}
+
+.card-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: var(--white-color);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Form styling for smooth interaction */
+form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: var(--accent-color);
+    color: var(--white-color);
+}
+
+form input, form textarea {
+    font-size: 1.5rem;
+    border: 2px solid var(--bs-primary-rgb);
+    background-color: var(--white-color);
+    color: var(--background-color);
+    padding: 0.75rem;
+    transition: border-color 0.3s ease-in-out;
+}
+
+/* Remove blue outlines and add smooth focus effect */
+form input:focus, form textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+form button {
+    font-size: 1.2rem;
+    background-color: var(--bs-primary-rgb);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    color: var(--accent-color);
+    transition: all 0.3s ease-in-out;
+}
+
+form button:hover {
+    background-color: var(--accent-color);
+    color: var(--bs-primary-rgb);
+}
+
+/* Pagination styling with better alignment */
+.pagination .page-link {
+    color: var(--bs-primary-rgb);
+    background-color: var(--background-color);
+    border: 2px solid var(--bs-primary-rgb);
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.pagination .page-link:hover {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+}
+
+.pagination .page-item.active .page-link {
+    background-color: var(--bs-primary-rgb);
+    color: var(--accent-color);
+}
+
+/* Modal styling for Delete Note prompt */
+.modal-content {
+    background-color: var(--background-color);
+    color: var(--bs-primary-rgb);
+    padding: 1rem;
+}
+
+.modal-header h5 {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 1.5rem;
+}
+
+.modal-body p {
+    font-family: 'Poppins', sans-serif;
+    color: var(--white-color);
+}
+
+.modal-footer button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal-footer .btn-primary {
+    background-color: var(--bs-primary-rgb);
+    color: var(--accent-color);
+    border: none;
+}
+
+.modal-footer .btn-secondary {
+    background-color: var(--accent-color);
+    color: var(--bs-primary-rgb);
+    border: none;
+}
+
+.modal-footer button:hover {
+    opacity: 0.8;
+}
+
+/* Input and search bar cleanup */
+input[type="search"] {
+    border-radius: 8px;
+    padding: 0.5rem;
+    border: 2px solid var(--bs-primary-rgb);
+    background-color: var(--background-color);
+    color: var(--white-color);
+    box-shadow: none; /* Removes blue outline */
+}
+
+input[type="search"]:focus {
+    outline: none;
+}
